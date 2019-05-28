@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PromiseKitTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--- -" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwg-eW-LLy">
+                                <rect key="frame" x="20" y="208" width="374" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9fo-Z8-Iiy">
+                                <rect key="frame" x="87" y="336" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="ban-Tx-iKS"/>
+                                    <constraint firstAttribute="width" secondItem="9fo-Z8-Iiy" secondAttribute="height" multiplier="15:8" id="tUQ-yb-j8Z"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search for the city" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Pl-nf-Zl9">
+                                <rect key="frame" x="20" y="84" width="374" height="33"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="xht-g7-1ec"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City, Country" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ee-kl-PPZ">
+                                <rect key="frame" x="20" y="167" width="374" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="9fo-Z8-Iiy" firstAttribute="top" secondItem="gwg-eW-LLy" secondAttribute="bottom" constant="8" id="0RX-2w-ucA"/>
+                            <constraint firstItem="6Pl-nf-Zl9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="7v5-Dr-Ngb"/>
+                            <constraint firstItem="6Pl-nf-Zl9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BkJ-4O-FcP"/>
+                            <constraint firstItem="gwg-eW-LLy" firstAttribute="top" secondItem="3Ee-kl-PPZ" secondAttribute="bottom" constant="8" id="H8J-q4-5pO"/>
+                            <constraint firstItem="3Ee-kl-PPZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="OsI-1n-Ryg"/>
+                            <constraint firstItem="9fo-Z8-Iiy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bBi-hQ-ci7"/>
+                            <constraint firstItem="3Ee-kl-PPZ" firstAttribute="top" secondItem="6Pl-nf-Zl9" secondAttribute="bottom" constant="50" id="cE9-73-qzN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Ee-kl-PPZ" secondAttribute="trailing" constant="20" id="d02-mv-dx6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Pl-nf-Zl9" secondAttribute="trailing" constant="20" id="fXi-B0-qQ9"/>
+                            <constraint firstItem="gwg-eW-LLy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gzS-TA-h4V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gwg-eW-LLy" secondAttribute="trailing" constant="20" id="zyx-Yh-8be"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="5kX-bE-FEN" appends="YES" id="tG3-s1-cZd"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="9fo-Z8-Iiy" id="MZg-w3-p5p"/>
+                        <outlet property="locationLabel" destination="3Ee-kl-PPZ" id="Jdj-bF-gRu"/>
+                        <outlet property="searchTextField" destination="6Pl-nf-Zl9" id="Vpb-MM-lwx"/>
+                        <outlet property="tempLabel" destination="gwg-eW-LLy" id="03z-LR-6fW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="5kX-bE-FEN">
+                    <connections>
+                        <action selector="viewTapped:" destination="BYZ-38-t0r" id="ibQ-Ed-5F1"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
